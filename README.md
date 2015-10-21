@@ -22,12 +22,12 @@ Git and Gihub are tools that not only coders, but anyone who wants to keep track
 ```
 mkdir learning_git
 ```  
-_mkdir_ stands for "make directory", the command line will then make a directory and name it the second word in the command, which is *learning_git* in this case.
+_mkdir_ stands for "make directory", the command line will then make a directory and name it the second word in the command, which is *learning_git* in this case.  
 3. So you've made the directory, but you don't want to make a repository in the root folder, you want it in the *learning_git* directory, so you'll have to move into it using _cd_:
 ```
 cd learning_git
 ```  
-_cd_ means "change directory". It moves you into the folder name you put after _cd_, here it'll move us into the *learning_git* directory.
+_cd_ means "change directory". It moves you into the folder name you put after _cd_, here it'll move us into the *learning_git* directory.  
 4. You'll want a file to keep track of, so let's make a README file. This command will make the file:
 ```
 touch README.txt
