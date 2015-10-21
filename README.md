@@ -25,7 +25,7 @@ mkdir learning_git
 This will make a directory called "learning_git". We only made it, so next we have to go into it using:
 ```
 cd learning_git
-```
+```  
 3. 
 
 ---
