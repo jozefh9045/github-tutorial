@@ -38,7 +38,14 @@ The _touch_ command makes files, here you made a text file named _README.txt_. T
 ## Repository Setup
 
 ###How to Start Using Github
-1. Before you do anything, you should set up your name and email so commits you make will have your name and be with your Github account.
+
+1. Before you do anything, you should set up your name and email so commits you make will have your name and be linked to your Github account. The commands to do this are:
+```
+git config --global user.name "[Your Name]"
+git config --global user.email "[Your email]"
+```
+In the first command, put your name in the place of [Your Name] (replace the brackets, too). This will put your name on any commits you make to give you credit.  
+In the second command, your email should be in the place of [Your email] (like the first command, replace the bracktes). This command will link any commits you've made to your Github account. 
 
 ---
 ## Workflow & Commands
