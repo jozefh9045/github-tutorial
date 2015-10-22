@@ -1,6 +1,6 @@
 # GitHub Tutorial
 
-_by Jozef_
+_by Jozef Hernandez_
 
 ---
 ## Git vs. GitHub
