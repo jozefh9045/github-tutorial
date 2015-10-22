@@ -46,7 +46,7 @@ git config --global user.name "[Your Name]"
 git config --global user.email "[Your email]"
 ```
 In the first command, put your name in the place of [Your Name] (replace the brackets, too). This will put your name on any commits you make to give you credit.  
-In the second command, your email should be in the place of [Your email] (like the first command, replace the bracktes). This command will link any commits you've made to your Github account.  
+In the second command, your email should be in the place of [Your email] (like the first command, replace the brackets). This command will link any commits you've made to your Github account.  
 2. Next, use:
 ```
 git init
@@ -56,7 +56,7 @@ This will start a new repository in your current folder, *learning_git*. Think o
 ```
 git add *
 ```
-This command, _git add *_, will metaphorically put all files onto the stage so that you can take a picture of them (you can add indivisual files by putting their name instead of the *). You can screenshot thm using:
+This command, _git add *_, will metaphorically put all files onto the stage so that you can take a picture of them (you can add individual files by putting their name instead of the *). You can screenshot thm using:
 ```
 git commit -m "[message]"
 ```
