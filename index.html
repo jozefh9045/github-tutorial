@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>GitHub Tutorial by jozefh9045</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>GitHub Tutorial</h1>
+        <h2>A Tutorial for GitHub</h2>
+        <a href="https://github.com/jozefh9045/github-tutorial" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by Jozef Hernandez</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<p>Git and Gihub are tools that not only coders, but anyone who wants to keep track of a project, use to keep previous versions of a file and allow others to make their own version of a file.  </p>
+
+<h3>
+<a id="git" class="anchor" href="#git" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git</h3>
+
+<ul>
+<li>Git is a tool on the command line that allows you to keep track of previous version of a file or project using snapshots.<br>
+</li>
+</ul>
+
+<h3>
+<a id="github" class="anchor" href="#github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Github</h3>
+
+<ul>
+<li>Github is a website that allows you to upload screenshots of your file or project where you can clone your work from the website into another computer and work on it from there.</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<h3>
+<a id="how-to-start-using-git" class="anchor" href="#how-to-start-using-git" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to Start Using Git</h3>
+
+<ol>
+<li>First off, you'll need to go to a command line workspace, like <a href="https://c9.io">Cloud9</a>, for example. You'll have to make an account to be able to work on it, but you can use a Github account to log onto Cloud9, so make a Github account first and log onto Cloud9 with the Github account.</li>
+<li>Then you'll have to put your c9 SSH key into your Github. Go to your settings page in Github and click SSH keys. Click "Sdd SSH Key" and name it Cloud9. To get your Cloud9 SSH key, go to c9.io and click on the gear icon at the top right and at the left, click "SSH Keys". Copy the block of characters and paste it into your Github.</li>
+<li>Next, once you make your workspace, it'll be good to make a new directory, so you can use this command:</li>
+</ol>
+
+<pre><code>mkdir learning_git
+</code></pre>
+
+<p><em>mkdir</em> stands for "make directory", the command line will then make a directory and name it the second word in the command, which is <em>learning_git</em> in this case.<br>
+4. So you've made the directory, but you don't want to make a repository in the root folder, you want it in the <em>learning_git</em> directory, so you'll have to move into it using <em>cd</em>:</p>
+
+<pre><code>cd learning_git
+</code></pre>
+
+<p><em>cd</em> means "change directory". It moves you into the folder name you put after <em>cd</em>, here it'll move us into the <em>learning_git</em> directory.<br>
+5. You'll want a file to keep track of, so let's make a README file. This command will make the file:</p>
+
+<pre><code>touch README.txt
+</code></pre>
+
+<p>The <em>touch</em> command makes files, here you made a text file named <em>README.txt</em>. Text files can be edited to contain a message. To edit the text file, look at the left of your command line and you'll see a folder named "learning_git". Click on it to reveal your README text file, then click on the file to edit it on the window above the command line. After typing something, remember to save it in the "File" tab!</p>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<h3>
+<a id="how-to-start-using-github" class="anchor" href="#how-to-start-using-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to Start Using Github</h3>
+
+<ol>
+<li>Before you do anything, you should set up your name and email so commits you make will have your name and be linked to your Github account. The commands to do this are:</li>
+</ol>
+
+<pre><code>git config --global user.name "[Your Name]"
+git config --global user.email "[Your email]"
+</code></pre>
+
+<p>In the first command, put your name in the place of <a href="replace%20the%20brackets,%20too">Your Name</a>. This will put your name on any commits you make to give you credit.<br>
+In the second command, your email should be in the place of <a href="like%20the%20first%20command,%20replace%20the%20brackets">Your email</a>. This command will link any commits you've made to your Github account.<br>
+2. Next, use:</p>
+
+<pre><code>git init
+</code></pre>
+
+<p>This will start a new repository in your current folder, <em>learning_git</em>. Think of a repository as a photo album that keeps all of your snapshots.
+3. Next, you'll have to use:</p>
+
+<pre><code>git add *
+</code></pre>
+
+<p>This command, <em>git add *</em>, will metaphorically put all files onto the stage so that you can take a picture of them (you can add individual files by putting their name instead of the *). You can screenshot thm using:</p>
+
+<pre><code>git commit -m "[message]"
+</code></pre>
+
+<p>The <em>commit</em> part will take a metaphorical picture of your code to put in the metaphorical photo album so that you can go back to it later. The <em>-m "[message]"</em> will leave a message on the snapshot. Replace the [message] part with your own message about the snapshot in the present tense.
+3. To link this repository to a repository in your Github, you'll have to click the plus at the top right, and click new repository. Name it the same as your folder (learning_git) and click continue. In the section called "Quick setup — if you’ve done this kind of thing before", make sure it has SSH selected. Then follow the commands in the "…or push an existing repository from the command line" section. The first one will link the repositories and the 2nd one will put your README.txt into the Github Repository.</p>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<ul>
+<li>Congratulations! You've set up your repository and it's on Github! Here's some notes if you want to work on your repository in the future.</li>
+<li>So, maybe you'll want to edit the text file or add something into the repository. When working in the command line, it'll be useful to use:</li>
+</ul>
+
+<pre><code>git status
+</code></pre>
+
+<ul>
+<li>This command will tell you if you have unadded files (red), added files (green), or if nothing has changed (it'll say "nothing to commit").</li>
+<li>When the  message is red, use this command: <em>git add *</em>.</li>
+<li>When the message is green, use <em>git commit -m "[message]"</em>.</li>
+<li>When you've edited a file but it shows "nothing to commit", it's probably because you didn't save. You can save manually by clicking "File" at the top left and clicking save. You can turn autosave on by clicking the gear icon on the top right, go to "User Settings", click "Save", and turn on "Enable Auto-Save".</li>
+</ul>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/jozefh9045/github-tutorial/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/jozefh9045/github-tutorial/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/jozefh9045/github-tutorial"></a> is maintained by <a href="https://github.com/jozefh9045">jozefh9045</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
